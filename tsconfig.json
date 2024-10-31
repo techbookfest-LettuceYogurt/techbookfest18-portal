@@ -17,6 +17,12 @@
             "@/*": ["./src/*"]
         }
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "eslint.config.js"],
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "eslint.config.js",
+        "src/pages/articles/index.mdx"
+    ],
     "exclude": ["node_modules"]
 }
