@@ -22,7 +22,7 @@ export default {
         </span>
     ),
     project: {
-        link: 'https://github.com/techbookfest-LettuceYogurt/techbookfest17-portal',
+        link: 'https://github.com/techbookfest-LettuceYogurt/techbookfest18-portal',
     },
     // ... other theme options
 } satisfies ThemeConfig
