@@ -1,4 +1,4 @@
-# techbookfest17-portal
+# techbookfest18-portal
 
 このリポジトリは、Lettuce Yogurtが技術書典17にて頒布した合同誌「令和の新卒エンジニア」のサポートページのものです。
 
