@@ -34,10 +34,6 @@ jobs:
         env:
           URL_PREFIX: techbookfest18-portal
 
-      # yarn exportが不要な場合はこのステップを削除してください
-      - name: Export static site
-        run: yarn export
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
