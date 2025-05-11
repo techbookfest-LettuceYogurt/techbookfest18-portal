@@ -1,5 +1,30 @@
 # 新卒フルリモートエンジニアがデータドリブンに35kg痩せた話
 
+=== 必要な摂取カロリーの算出 で使用したコードです。
+
+```python
+H = 172  # Height (cm)
+A = 24   # Age (years)
+C = 0.4235  # Gender coefficient (male)
+PAL = 1.75  # Physical Activity Level (moderate)
+DAYS = 30  # Number of days (1 month)
+START_WEIGHT = 63.0  # Starting weight (kg)
+WEIGHT_LOSS_PER_DAY = 3.0 / 30  # Daily weight loss (kg)
+
+def calc_bmr(weight):
+    # Calculate Basal Metabolic Rate (BMR) in kcal
+    return (0.0481 * weight + 0.0234 * H - 0.0138 * A - C) * (1000 / 4.186)
+
+print(f"{'Day':>3} {'Weight (kg)':>12} {'BMR (kcal)':>12} {'摂取カロリー(kcal)':>30}")
+print("-" * 60)
+
+for day in range(1, DAYS + 1):
+    weight = START_WEIGHT - WEIGHT_LOSS_PER_DAY * (day - 1)
+    bmr = calc_bmr(weight)
+    total_energy = bmr * PAL
+    print(f"{day:3d} {weight:12.2f} {bmr:12.1f} {total_energy:30.1f}")
+```
+
 === 1日だけ頑張る努力よりも長く続けられる工夫を見出す重要性 で使用したコードです。
 
 初期体重が98kg、脂肪燃焼分だけ体重が毎回減少、消費されるカロリーの60%が脂肪として消費されると仮定。
