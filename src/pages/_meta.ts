@@ -1,7 +1,7 @@
 import { Meta } from 'nextra'
 
 export default {
-    index: '令和の新卒エンジニア v2.0',
+    index: '令和の新卒エンジニア vol.2.0',
     eratta: '正誤表',
     articles: '章別サポート',
     techbookfest: {
